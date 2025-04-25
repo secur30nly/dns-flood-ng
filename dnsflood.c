@@ -452,19 +452,7 @@ int main(int argc, char **argv)
 			// perror("sendto error");
 		}
 
-		count++;
-
-		if (number > 0 && count >= number) {
-			// done
-			break;
-		}
-
-		if (sleep_interval > 0) {
-			usleep(sleep_interval);
-		}
 	}
-
-	printf("sent %d DNS requests.\n", count);
 
 	return 0;
 }
